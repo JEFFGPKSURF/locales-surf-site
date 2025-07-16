@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Locales Surf School Cancún</title>
+  <link rel="stylesheet" href="style.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Changa:wght@400;700&display=swap" rel="stylesheet">
+  <script src="https://unpkg.com/scrollreveal"></script>
+</head>
+<body>
+  <header>
+    <div class="container">
+      <h1>Locales Surf School Cancún</h1>
+      <a class="whatsapp-btn" href="https://wa.me/5219981544063" target="_blank">📲 Book via WhatsApp</a>
+    </div>
+  </header>
+
+  <section class="hero">
+    <h2 data-key="Learn to surf..." lang="en">Learn to surf with the real locals of Cancún</h2>
+    <p>Authentic Mexican surf experience. Sun, waves, and pura vida. 🌊🇲🇽</p>
+    <a class="cta-btn" href="https://wa.me/5219981544063" target="_blank">Book Your Class Now</a>
+  </section>
+
+  <section class="services">
+    <h2>Surf Lessons & Packages</h2>
+    <div class="service-list">
+      <div class="service-item">
+        <h3>Private Surf Lesson</h3>
+        <p>Perfect for solo travelers or personalized coaching.</p>
+      </div>
+      <div class="service-item">
+        <h3>Group Lessons</h3>
+        <p>Fun sessions for friends, families, or couples. Great energy guaranteed!</p>
+      </div>
+      <div class="service-item">
+        <h3>3-Class Package</h3>
+        <p>Learn progressively and get a great deal while you're here.</p>
+      </div>
+      <div class="service-item">
+        <h3>Photos & Video Package</h3>
+        <p>Capture your surf journey with land and aerial drone shots 🚁.</p>
+      </div>
+    </div>
+  </section>
+
+  <section class="gallery">
+    <h2>Gallery</h2>
+    <div class="carousel">
+      <img src="img1.jpg" alt="Surf with locals">
+      <img src="img2.jpg" alt="Drone aerial shot">
+      <img src="img3.jpg" alt="Group lesson fun">
+      <img src="img4.jpg" alt="Sunset surf">
+    </div>
+  </section>
+
+  <section class="booking">
+    <h2>Book Your Spot</h2>
+    <iframe src="https://calendly.com/your-link" width="100%" height="600" frameborder="0"></iframe>
+  </section>
+
+  <section class="contact">
+    <h2>Get in Touch</h2>
+    <p>📲 WhatsApp: <a href="https://wa.me/5219981544063" target="_blank">+52 1 998 154 4063</a></p>
+    <p>📸 Instagram: <a href="https://instagram.com/locales_surfschoolcancun" target="_blank">@locales_surfschoolcancun</a></p>
+    <p>📩 Email: <a href="mailto:localessurf@gmail.com">localessurf@gmail.com</a></p>
+    <p>📍 Location: Playa Delfines, Cancún, México</p>
+  </section>
+
+  <footer>
+    <p>&copy; 2025 Locales Surf School Cancún · 100% Local & Proudly Mexican 🇲🇽</p>
+  </footer>
+
+  <button id="lang-toggle" style="position:fixed;bottom:10px;right:10px;padding:0.5rem 1rem;background:#ff9800;color:white;border:none;border-radius:8px;cursor:pointer;">EN/ES</button>
+
+  <script>
+    const dict = {
+      "Learn to surf...": {
+        "es": "Aprende a surfear con los verdaderos locales de Cancún"
+      }
+    };
+    document.getElementById('lang-toggle').addEventListener('click', () => {
+      document.querySelectorAll('[data-key]').forEach(el => {
+        const key = el.getAttribute('data-key');
+        const lang = el.lang === 'en' ? 'es' : 'en';
+        el.textContent = dict[key][lang] || el.textContent;
+        el.lang = lang;
+      });
+    });
+
+    ScrollReveal().reveal('section', {
+      delay: 200,
+      distance: '50px',
+      duration: 800,
+      easing: 'ease-out',
+      origin: 'bottom'
+    });
+  </script>
+
+  <script type="text/javascript">
+    window.__be = window.__be || {};
+    window.__be.id = "6593e6803a6a4900071a92bf";
+    (function() {
+      var be = document.createElement('script'); be.type = 'text/javascript'; be.async = true;
+      be.src = 'https://cdn.chatwidget.com/widget/plugin.js';
+      var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(be, s);
+    })();
+  </script>
+</body>
+</html>

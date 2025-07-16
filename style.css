@@ -1,0 +1,40 @@
+body {
+  font-family: 'Changa', sans-serif;
+  margin: 0;
+  padding: 0;
+  background: #fff;
+  color: #111;
+}
+h1, h2, h3 {
+  color: #000;
+}
+.container {
+  padding: 1rem;
+}
+.hero, .services, .gallery, .booking, .contact {
+  padding: 2rem;
+}
+.carousel {
+  display: flex;
+  gap: 1rem;
+  overflow-x: auto;
+}
+.carousel img {
+  height: 200px;
+  border-radius: 12px;
+}
+.whatsapp-btn, .cta-btn {
+  display: inline-block;
+  margin-top: 1rem;
+  padding: 0.7rem 1.2rem;
+  background: #25D366;
+  color: white;
+  text-decoration: none;
+  border-radius: 6px;
+}
+footer {
+  text-align: center;
+  padding: 1rem;
+  background: #eee;
+  margin-top: 2rem;
+}
